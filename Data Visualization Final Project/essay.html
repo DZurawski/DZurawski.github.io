@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Data Visualization Final Project Summer 2018">
+    <meta name="author" content="Daniel Zurawski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="slide.css">
+  </head>
+  <body>
+  <header>
+    <div id="title">Data Visualization Final Project</div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item unselectable-text"><a href="slide_1.html">1</a></li>
+        <li class="nav-item unselectable-text"><a href="slide_2.html">2</a></li>
+        <li class="nav-item unselectable-text"><a href="slide_3.html">3</a></li>
+        <li class="nav-item unselectable-text nav-current"><a href="essay.html">Essay</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Essay</h1>
+      <h4>Hybrid Structure</h4>
+      <p>
+        I chose to use the interactive slideshow hybrid structure for my final project. The question that my presentation focuses on is: "In blitz chess, should you castle?"
+      </p>
+      <h4>Scenes</h4>
+      <p>
+        I chose to include two scenes within my presentation. Scene 1 displays probability of castling versus a player's elo rating. This scene helps answer my focus question by showing that high-level players tend to castle more frequently than low-level players. Scene 2 displays number of moves before castling versus the white player's average score. This scene shows that players who do not castle tend to score lower than players who do castle. It also shows that there is generally low correlation between number of moves before castling and player score.
+      </p>
+      <p>
+        The layout of each scene is a singular chart with clarifying information below it. This layout brings the chart to the user's full attention and provides detailed information below if the user desires to read it. At the very bottom are buttons that progress to the next scene.
+      </p>
+      <h4>Annotations</h4>
+      <p>
+        In the line graph, I chose to use text annotations to highlight how the probability of castling is correlated with a player's elo. I chose to include the approximate probability of castling within each annotation to show how significant the percentage point change is (from ~50% to ~97%). Also, if users mouseover a data point, more information about that data point is provided as a pop-up annotation. I chose to make these annotations as pop-ups because they provide specific information that can be intrusive if these annotations were always visible.
+      </p>
+      <p>
+        In the heat map, I chose to use text annotations to highlight how not castling is correlated with a lower score. Similarly with the line graph, hovering your mouse over a heat map square will display extra information through a pop-up annotation. This pop-up annotation is very heavy with information, so I chose to make it only appear if users request it through mousing over it. By doing this, the annotation is not obstructive to viewing the chart as a whole.
+      </p>
+      <p>
+        All annotations are cleared between scenes because the annotations are most relevant to the scene they are introduced at.
+      </p>
+      <h4>Parameters</h4>
+      <p>
+        Current Scene Parameter - The current scene parameter determines which scene the user is currently viewing. This parameter can be changed by the user through using the progression buttons at the bottom or through the navigation bar. The current scene parameter is displayed in the navigation bar, where the current scene's number has a white box border around it.
+      </p>
+      <p>
+        Dynamic Annotation Parameter - Users can mouse over data points and heat map rectangles to display specific information. The dynamic annotation parameter contains this information.
+      </p>
+      <h4>Triggers</h4>
+      <p>
+        Progression Button Trigger - To progress between scenes, I chose to use buttons that the user can click at the bottom. These buttons are labeled "previous" and "next", so it is clear to the user that these buttons progress the slideshow. They change the current scene parameter.
+      </p>
+      <p>
+        Navigation Bar Trigger - I also included a navigation bar at the top so that users can go back and view specific scenes after they have finished the slideshow. The navigation bar highlights which scene the user is currently on and mousing over the scene numbers highlights them, indicating to the user that they can click it.</p>
+      <p>
+        Mouse Over Trigger - Users are able to mouseover data points to display specifying information. This changes the dynamic annotation parameter's content and display visibility. The viewer is aware of this because the scenes say to mouse over points to display more information.
+      </p>
+    </article>
+    <div id="progress-buttons">
+      <a class="progress-button unselectable-text" href="slide_3.html">Previous</a>
+    </div>
+  </main>
+  <footer>
+    University of Illinois - Data Visualization Summer 2018 - Daniel Zurawski - dzuraws2
+  </footer>
+  </body>
+</html>

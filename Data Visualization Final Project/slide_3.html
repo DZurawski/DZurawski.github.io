@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Data Visualization Final Project Summer 2018">
+    <meta name="author" content="Daniel Zurawski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+  <body>
+  <header>
+    <div id="title">Data Visualization Final Project</div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item unselectable-text"><a href="slide_1.html">1</a></li>
+        <li class="nav-item unselectable-text"><a href="slide_2.html">2</a></li>
+        <li class="nav-item unselectable-text nav-current"><a href="slide_3.html">3</a></li>
+        <li class="nav-item unselectable-text"><a href="essay.html">Essay</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>White's Average Score vs. Number of Moves Before Castling</h1>
+    <div id="legend">
+        <p class="legend">White Average Score: 0.4</p>
+        <svg width="16em" height="2em" class="legend">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%"   style="stop-color:hsl(0, 100%, 30%);stop-opacity:1" />
+              <stop offset="49%"  style="stop-color:hsl(0, 100%, 70%);stop-opacity:1" />
+              <stop offset="51%"  style="stop-color:hsl(240, 100%, 70%);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:hsl(240, 100%, 30%);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <ellipse cx="8em" cy="1em" rx="8em" ry="1em" fill="url(#grad1)" />
+        </svg>
+        <p class="legend">White Average Score: 0.6</p>
+        <svg class="legend" height="2em"></svg>
+      </div>
+    <svg id="heat-map"></svg>
+    <div id="progress-buttons">
+      <a class="progress-button unselectable-text" href="slide_2.html">Previous</a>
+      <a class="progress-button unselectable-text" href="essay.html">Next</a>
+    </div>
+    <p>A "Number of Moves" value of 0 indicates that the player did not castle during their game.</p>
+    <p>Hover over a data point to get more information.</p>
+    <div id="source annotation">
+      <p>
+        The games used as samples consist of all blitz chess games played on FICS during 2016 such that for each game, the participants had an average Elo rating of 2000 or higher. Elo ratings represent how well players perform. Players are awarded 1 point for winning, 0.5 points for drawing and 0 points for losing.
+      </p>
+    </div>
+  </main>
+  <footer>
+    University of Illinois - Data Visualization Summer 2018 - Daniel Zurawski - dzuraws2
+  </footer>
+  <script src="slide_3.js"></script>
+  </body>
+</html>

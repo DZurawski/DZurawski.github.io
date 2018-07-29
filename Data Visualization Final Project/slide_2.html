@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Data Visualization Final Project Summer 2018">
+    <meta name="author" content="Daniel Zurawski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+  </head>
+  <body>
+  <header>
+    <div id="title">Data Visualization Final Project</div>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item unselectable-text"><a href="slide_1.html">1</a></li>
+        <li class="nav-item unselectable-text nav-current"><a href="slide_2.html">2</a></li>
+        <li class="nav-item unselectable-text"><a href="slide_3.html">3</a></li>
+        <li class="nav-item unselectable-text"><a href="essay.html">Essay</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Probability of Castling vs. Player Elo Rating</h1>
+    <div id="legend">
+      <p class="legend">White Player Color</p>
+      <svg width="1em" height="1em" class="legend">
+        <rect width="1em" height="1em" style="fill:lightblue;" />
+      </svg>
+      <p class="legend">Black Player Color</p>
+      <svg width="1em" height="1em" class="legend">
+        <rect width="1em" height="1em" style="fill:darkred;" />
+      </svg>
+    </div>
+    <svg id="line-graph"></svg>
+    <div><p>Hover over a data point to get more information.</p></div>
+    <div id="source annotation">
+      <p>
+        The games used as samples consist of all blitz chess games played on FICS during 2016 such that for each game, the participants had an average Elo rating of 2000 or higher. Elo ratings represent how well players perform.
+      </p>
+    </div>
+    <div id="progress-buttons">
+      <a class="progress-button unselectable-text" href="slide_1.html">Previous</a>
+      <a class="progress-button unselectable-text" href="slide_3.html">Next</a>
+    </div>
+  </main>
+  <footer>
+    University of Illinois - Data Visualization Summer 2018 - Daniel Zurawski - dzuraws2
+  </footer>
+  <script src="slide_2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+body {
+  background-color: lightgray;
+  font-family: verdana;
+}
+
+.unselectable-text {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+}
+
+.nav-item {
+  float: left;
+}
+
+#title {
+  color: yellow;
+  font-size: 2em;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.nav-item a {
+  color: white;
+  display: block;
+  font-size: 1.25em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: darkgray;
+}
+
+.nav-item a:active {
+  background-color: slategray;
+}
+
+header {
+  background-color: darkslategray;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 0.5em rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.progress-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  color: initial;
+  margin: 0.125em;
+  text-decoration: none;
+  padding: 0.125em;
+}
+
+.nav-current {
+  border: 2px ridge white;
+}
+
+.legend {
+  display: block;
+  float: left;
+  margin: auto;
+  margin-right: 1em;
+}
+
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: 120px;					
+  height: 2.2em;					
+  padding: 2px;
+  margin: 2px;  
+  font: 12px sans-serif;			
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;
+}
